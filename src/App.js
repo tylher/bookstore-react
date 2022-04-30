@@ -1,7 +1,16 @@
+import Header from "./components/Header";
+import { Route, Routes } from "react-router-dom";
+import Books from "./components/Books";
+import Categories from "./components/Categories";
+
 const App = () => {
   return (
     <>
-      <h1>New React App</h1>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Books />} />
+        <Route path="Categories" element={<Categories />} />
+      </Routes>
     </>
   );
 };
