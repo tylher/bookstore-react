@@ -3,9 +3,9 @@ const REMOVE_BOOK = 'REMOVE_BOOK';
 
 const reducer = (
   state = [
-    { title: 'Lord of the rings', id: 0, author: 'Prince' },
-    { title: 'Harry potter', id: 1, author: 'Monroe' },
-    { title: 'Cindarella', id: 2, author: 'Halle' },
+    { title: 'Lord of the rings', id: '0', author: 'Prince' },
+    { title: 'Harry potter', id: '1', author: 'Monroe' },
+    { title: 'Cindarella', id: '2', author: 'Halle' },
   ],
   action,
 ) => {
@@ -16,7 +16,7 @@ const reducer = (
         { id: action.id, title: action.title, author: action.author },
       ];
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.id);
+      return [...(state.filter((book) => book.id !== action.id))];
     default:
       return state;
   }

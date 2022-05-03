@@ -1,4 +1,3 @@
-// import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import Book from './Book';
 import InputBook from './InputBook';
@@ -11,8 +10,7 @@ const Books = () => {
         const { id, author, title } = book;
         return (
           <div key={id}>
-            <Book author={author} title={title} />
-            <button type="button">Remove</button>
+            <Book author={author} title={title} id={id} />
           </div>
         );
       })}
