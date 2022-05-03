@@ -1,7 +1,14 @@
 const ADD_BOOK = 'ADD_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
 
-const reducer = (state = [], action) => {
+const reducer = (
+  state = [
+    { title: 'Lord of the rings', id: 0, author: 'Prince' },
+    { title: 'Harry potter', id: 1, author: 'Monroe' },
+    { title: 'Cindarella', id: 2, author: 'Halle' },
+  ],
+  action,
+) => {
   switch (action.type) {
     case ADD_BOOK:
       return [
