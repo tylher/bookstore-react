@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/books';
+import { addBookAPI } from '../redux/books/books';
 
 const InputBook = () => {
   const [inputText, setInputText] = useState({ title: '', author: '' });
@@ -19,7 +19,7 @@ const InputBook = () => {
     const { title, author } = inputText;
     e.preventDefault();
     if (title.trim() && author.trim()) {
-      dispatch(addBook(uuidv4(), title, author));
+      dispatch(addBookAPI(uuidv4(), title, author, 'action'));
       setInputText({
         title: '',
         author: '',

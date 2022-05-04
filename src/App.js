@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import Header from './components/Header';
 import Books from './components/Books';
 import Categories from './components/Categories';
-import { asyncGetBook } from './redux/configureStore';
+import { asyncGetBook } from './redux/books/books';
 
 const App = () => {
   const dispatch = useDispatch();
