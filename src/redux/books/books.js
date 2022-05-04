@@ -1,5 +1,6 @@
 const ADD_BOOK = 'ADD_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
+const GET_BOOKS = 'GET_BOOKS';
 
 const reducer = (
   state = [
@@ -10,13 +11,19 @@ const reducer = (
   action,
 ) => {
   switch (action.type) {
+    case GET_BOOKS:
+      return Object.keys(action.books).map((book) => ({
+        id: book,
+        ...action.books[book][0],
+      }));
+
     case ADD_BOOK:
       return [
         ...state,
         { id: action.id, title: action.title, author: action.author },
       ];
     case REMOVE_BOOK:
-      return [...(state.filter((book) => book.id !== action.id))];
+      return [...state.filter((book) => book.id !== action.id)];
     default:
       return state;
   }
@@ -29,5 +36,7 @@ export const addBook = (id, title, author) => ({
   author,
 });
 export const removeBook = (id) => ({ type: REMOVE_BOOK, id });
+
+export const getBooks = (books) => ({ type: GET_BOOKS, books });
 
 export default reducer;
