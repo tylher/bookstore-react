@@ -24,6 +24,10 @@ const InputBook = () => {
         title: '',
         author: '',
       });
+      document.querySelectorAll('input').forEach((i) => {
+        const val = i;
+        val.value = '';
+      });
     }
   };
 

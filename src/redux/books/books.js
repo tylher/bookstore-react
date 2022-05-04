@@ -61,7 +61,20 @@ export const addBookAPI = (itemId, title, author, category) => (dispatch) => {
   });
 };
 
-export const removeBook = (id) => ({ type: REMOVE_BOOK, id });
+const removeBook = (id) => ({ type: REMOVE_BOOK, id });
+
+export const removeBookAPI = (itemId) => (dispatch) => {
+  fetch(`${BASE_URL}/${END_POINT}/${itemId}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  }).then((res) => {
+    if (res.ok) {
+      dispatch(removeBook(itemId));
+    }
+  });
+};
 
 export const getBooks = (books) => ({ type: GET_BOOKS, books });
 export const asyncGetBook = () => (dispatch) => fetch(`${BASE_URL}/${END_POINT}`, {
