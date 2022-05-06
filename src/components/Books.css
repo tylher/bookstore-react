@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  padding: 0 1.688rem;
+  align-items: center;
+}
+
+.book-details {
+  width: 40%;
+}
+
+.book {
+  width: 4.25rem;
+  height: 4.25rem;
+  position: relative;
+}
+
+.outer-circle {
+  width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-circle {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+
