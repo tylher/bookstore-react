@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-.header{
+.header {
   height: 5.938rem;
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;
   background-color: #fff;
@@ -25,14 +26,14 @@ li{
   color: #0290ff;
 }
 
-nav>ul{
-    display: flex;
-    gap: 2.563rem;
+nav > ul {
+  display: flex;
+  gap: 2.563rem;
 }
 
-.nav-link{
-    color: #121212;
-    text-decoration: none;
-    letter-spacing: 1.9px;
-     font-size: 0.813rem;
+.nav-link {
+  color: #121212;
+  text-decoration: none;
+  letter-spacing: 1.9px;
+  font-size: 0.813rem;
 }
