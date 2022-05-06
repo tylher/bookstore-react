@@ -44,6 +44,13 @@ const Book = (props) => {
           <span>completed</span>
         </div>
       </div>
+
+      <div className="line-border" />
+
+      <div className="current-chapter">
+        <h2>CURRENT CHAPTER</h2>
+
+      </div>
     </div>
   );
 };
