@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+
+form {
+  padding-top: 1.813rem;
+  padding-bottom: 15.563rem;
+}
+
+form > h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888;
+  margin-bottom: 1.188rem;
+}
+
+.flex-grp {
+  display: flex;
+  gap: 2.125rem;
+  flex-wrap: wrap;
+}
+
+.flex-grp > button {
+  width: 11.5rem;
+  padding: 0.801rem 3rem 0.886rem;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  background-color: #0290ff;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+}
+
+input {
+  padding: 0.813rem 1.063rem;
+  font-size: 1rem;
+  letter-spacing: -0.15px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  width: 18rem;
+}
+
+input::placeholder {
+  color: #c4c4c4;
+}
+
+select {
+  width: 17.813rem;
+  color: #c4c4c4;
+  padding: 0.813rem 10.063rem 0.813rem 0.8rem;
+  font-size: 1rem;
+  letter-spacing: -0.15px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  appearance: none;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAh0lEQVQ4T93TMQrCUAzG8V9x8QziiYSuXdzFC7h4AcELOPQAdXYovZCHEATlgQV5GFTe1ozJlz/kS1IpjKqw3wQBVyy++JI0y1GTe7DCBbMAckeNIQKk/BanALBB+16LtnDELoMcsM/BESDlz2heDR3WePwKSLo5eoxz3z6NNcFD+vu3ij14Aqz/DxGbKB7CAAAAAElFTkSuQmCC');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}

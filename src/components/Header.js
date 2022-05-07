@@ -1,22 +1,23 @@
 import { Link } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => {
   const links = [
     {
       id: 1,
-      name: 'Books',
+      name: 'BOOKS',
       path: '/',
     },
-    { id: 2, name: 'Categories', path: '/Categories' },
+    { id: 2, name: 'CATEGORIES', path: '/Categories' },
   ];
   return (
-    <header>
-      <h1>Bookstore CMS</h1>
+    <header className="header">
+      <h1 className="Bookstore-CMS">Bookstore CMS</h1>
       <nav>
         <ul>
           {links.map((link) => (
             <li key={link.id}>
-              <Link to={link.path}>{link.name}</Link>
+              <Link className="nav-link" to={link.path}>{link.name}</Link>
             </li>
           ))}
         </ul>
