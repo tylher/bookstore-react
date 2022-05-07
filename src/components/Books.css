@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
 
 * {
   padding: 0;
@@ -7,8 +7,8 @@
   box-sizing: border-box;
 }
 
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
 
 .container {
@@ -120,7 +120,7 @@ button{
   margin-left: 3.688rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   font-family: "Roboto Slab", serif;
 }
 
@@ -129,4 +129,26 @@ button{
   font-weight: 300;
   color: #121212;
   opacity: 0.5;
+  margin-bottom: 0.438rem;
+}
+
+.current-chapter > button{
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  border: none;
+  background-color: #0290ff;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+}
+
+.current-chapter > p {
+  margin-bottom: 1.438rem;
+  font-size: 0.95rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  color: #121212;
 }
