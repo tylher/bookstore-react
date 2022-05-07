@@ -22,13 +22,11 @@ form > h2 {
 }
 
 .flex-grp > button {
+    width: 11.5rem;
   padding: 0.801rem 3rem 0.886rem;
   font-family: 'RobotoSlab', sans-serif;
   font-size: 0.813rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 0.5px;
   background-color: #0290ff;
   border: none;
@@ -42,6 +40,7 @@ input {
   letter-spacing: -0.15px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
+  width: 18rem;
 }
 
 input::placeholder {
@@ -49,6 +48,7 @@ input::placeholder {
 }
 
 select {
+  width: 17.813rem;
   color: #c4c4c4;
   padding: 0.813rem 10.063rem 0.813rem 0.8rem;
   font-size: 1rem;

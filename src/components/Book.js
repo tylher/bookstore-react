@@ -14,7 +14,7 @@ const Book = (props) => {
   const randomNum = Math.floor(Math.random() * 101);
 
   const progressBar = {
-    backgroundImage: `conic-gradient( #307bbe , #379cf6 ${randomNum}%, white ${randomNum}% )`,
+    backgroundImage: `conic-gradient( #307bbe , #379cf6 ${randomNum}%, #e8e8e8 ${randomNum}% )`,
   };
 
   return (
